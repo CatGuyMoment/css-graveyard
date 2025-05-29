@@ -4,18 +4,35 @@
 }
 
 @keyframes parallax_SPINNY1 {
-    0% {  transform: rotateY(-15deg) }
+    0% {  transform: rotateY(-10deg) }
     50% {  transform: rotateY(-20deg) }
-    100% { transform: rotateY(-15deg) }
+    100% { transform: rotateY(-10deg) }
 }
 @keyframes parallax_SPINNY2 {
-    0% {transform:  translate3d(0,-60vmin ,0)  rotateY(15deg); }
+    0% {transform:  translate3d(0,-60vmin ,0)  rotateY(10deg); }
     50% { transform:  translate3d(0,-60vmin ,0)  rotateY(20deg); }
-    100% {transform:  translate3d(0,-60vmin ,0)  rotateY(15deg);}
+    100% {transform:  translate3d(0,-60vmin ,0)  rotateY(10deg);}
 }
 
-@keyframes hello-world {
-    0% { transform: skew(0deg, 0deg); }
+@keyframes parallax_SPINNY3 {
+    0% {transform:  translate3d(3vmin,-123.5vmin ,0) rotateY(-15deg) rotateX(-10deg) rotateY(-7deg) rotateZ(6deg)  rotateY(5deg); }
+    50% { transform:  translate3d(3vmin,-123.5vmin ,0) rotateY(-15deg) rotateX(-10deg) rotateY(-7deg) rotateZ(6deg)  rotateY(3deg); }
+    100% {transform:  translate3d(3vmin,-123.5vmin ,0) rotateY(-15deg) rotateX(-10deg) rotateY(-7deg) rotateZ(6deg)  rotateY(5deg);}
+}
+
+@keyframes parallax_TITLE {
+    0% {transform:  translate3d(-2vmin,-120vmin ,0)  rotateY(15deg) rotateX(-20deg) rotateY(30deg) rotateX(-5deg) rotateZ(-1deg)  rotateY(5deg); }
+    50% { transform:  translate3d(-2vmin,-120vmin ,0)  rotateY(15deg) rotateX(-20deg) rotateY(30deg) rotateX(-5deg) rotateZ(-1deg)  rotateY(7deg); }
+    100% {transform:  translate3d(-2vmin,-120vmin ,0)  rotateY(15deg) rotateX(-20deg) rotateY(30deg) rotateX(-5deg) rotateZ(-1deg)  rotateY(5deg);}
+}
+
+@keyframes orbit {
+    from {
+        transform: rotate(0deg) translateX(100px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(100px) rotate(-360deg);
+    }
 }
 
 
@@ -28,6 +45,10 @@
     transform: translate3d(-2vmin,-120vmin ,0)  rotateY(15deg) rotateX(-20deg) rotateY(30deg) rotateX(-5deg) rotateZ(-1deg);
     text-align: center;
     transform-origin: center;
+
+    animation-name: parallax_TITLE;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
 
 .selections {
@@ -42,6 +63,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.5vmin;
+    animation-name: parallax_SPINNY3;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
 }
 
 
@@ -52,7 +77,7 @@ p {
 }
 
 body {
-    background-color: #1e1f22;
+    background-color: #eeeeee;
 }
 
 .spinner {
@@ -62,11 +87,27 @@ body {
 
 }
 
-
 .environment_3d {
     perspective: 100vmin;
     perspective-origin: 50% 30%;
   }
+
+.bubble {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: var(--y);
+    left: var(--x);
+
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0,0,0,1), rgba(0,0,0,0.8) 70%);
+    filter: blur(0.5vmin);
+
+    /* reuse your orbit keyframes, for a gentle circular drift */
+    animation: orbit var(--d) linear infinite;
+    animation-delay: var(--delay);
+    transform-origin: center center;
+}
 
 .back_square1 {
     aspect-ratio: 1;
@@ -83,10 +124,11 @@ body {
 
 
     animation-name: parallax_SPINNY1;
-    animation-duration: 8s;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
 }
 .back_square2 {
+
     aspect-ratio: 1;
     transform-origin: center;
     transform: translate3d(0,-60vmin ,0)  rotateY(15deg);
@@ -100,7 +142,12 @@ body {
 
 
     animation-name: parallax_SPINNY2;
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-iteration-count: infinite;
 
+}
+
+.click_selector:hover {
+    background-color: #ffffff;
+    -webkit-text-fill-color: black;
 }
