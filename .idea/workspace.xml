@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6bdda7e-8a15-4852-b4d9-14b3ba3bc943" name="Changes" comment="redo the directory to work with static html thingies">
+    <list default="true" id="d6bdda7e-8a15-4852-b4d9-14b3ba3bc943" name="Changes" comment="update css for the bubble things">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/test.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +38,9 @@
     &quot;accountId&quot;: &quot;37905378-fa36-48e4-b198-57007e0cd86a&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -90,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747761028562</updated>
       <workItem from="1747761029601" duration="19089000" />
-      <workItem from="1748507009827" duration="2980000" />
+      <workItem from="1748507009827" duration="3941000" />
     </task>
     <task id="LOCAL-00001" summary="first commit i think">
       <option name="closed" value="true" />
@@ -172,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748509855702</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update css for the bubble things">
+      <option name="closed" value="true" />
+      <created>1748510057295</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748510057295</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +193,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit i think" />
     <MESSAGE value="redo the directory to work with static html thingies" />
-    <option name="LAST_COMMIT_MESSAGE" value="redo the directory to work with static html thingies" />
+    <MESSAGE value="update css for the bubble things" />
+    <option name="LAST_COMMIT_MESSAGE" value="update css for the bubble things" />
   </component>
 </project>

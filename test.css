@@ -78,7 +78,9 @@ p {
 }
 
 body {
-    background-color: #eeeeee;
+    background:   linear-gradient(
+            to bottom, #eeeeee 0%, #ffffff 30%, #000000 100%
+    );
 }
 
 .spinner {
@@ -93,7 +95,7 @@ body {
     perspective-origin: 50% 30%;
   }
 
-.bubble {
+.wh-bubble {
     position: absolute;
     width: var(--size);
     height: var(--size);
@@ -101,10 +103,27 @@ body {
     left: var(--x);
 
     border-radius: 50%;
-    background: radial-gradient(circle at 30% 30%, rgba(0,0,0,1), rgba(0,0,0,0.8) 70%);
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,1), rgba(255,255,255,0.7) 70%);
     filter: blur(0.5vmin);
 
-    /* reuse your orbit keyframes, for a gentle circular drift */
+
+    animation: orbit var(--d) linear infinite;
+    animation-delay: var(--delay);
+    transform-origin: center center;
+}
+
+.bl-bubble {
+    position: absolute;
+    width: var(--size);
+    height: var(--size);
+    top: var(--y);
+    left: var(--x);
+
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, rgba(0,0,0,1), rgba(0,0,0,0.7) 70%);
+    filter: blur(0.5vmin);
+
+
     animation: orbit var(--d) linear infinite;
     animation-delay: var(--delay);
     transform-origin: center center;
