@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6bdda7e-8a15-4852-b4d9-14b3ba3bc943" name="Changes" comment="redo the directory to work with static html thingies">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.css" beforeDir="false" afterPath="$PROJECT_DIR$/test.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1747761028562</updated>
       <workItem from="1747761029601" duration="19089000" />
-      <workItem from="1748507009827" duration="2587000" />
+      <workItem from="1748507009827" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="first commit i think">
       <option name="closed" value="true" />
@@ -156,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747781066954</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="redo the directory to work with static html thingies">
+      <option name="closed" value="true" />
+      <created>1748509708657</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1748509708657</updated>
+    </task>
+    <task id="LOCAL-00010" summary="redo the directory to work with static html thingies">
+      <option name="closed" value="true" />
+      <created>1748509855702</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748509855702</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
